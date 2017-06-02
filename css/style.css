@@ -1,0 +1,451 @@
+/*----- Fonts -----*/
+@font-face {
+  font-family: comicSerifPro;
+  src: url("../fonts/Comic Serif Pro/HVD_Comic_Serif_Pro.otf");
+}
+
+@font-face {
+  font-family: quicksand;
+  src: url("../fonts/Quicksand/Quicksand-Regular.otf");
+}
+
+
+/*----- Texts -----*/
+h1, h2, h3, h4 {
+  font-family: comicSerifPro;
+}
+
+.navbar .navbar-nav > li > a,
+p {
+  font-family: quicksand;
+}
+
+.brand-name {
+  font-style: italic;
+  color: #e55d87;
+}
+
+
+/*----- Container -----*/
+.container {
+  width: 100%;
+}
+
+
+/*----- Logo -----*/
+header > .container-fluid {
+  position: relative;
+}
+
+.logo {
+  display: block;
+  width: 140px;
+  position: absolute;
+  top: 5px;
+  left: 200px;
+  z-index: 1;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+.logo.affix {
+  width: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 17;
+}
+
+
+/*----- Responsive Logo -----*/
+@media (max-width: 1400px) {
+  .logo {
+    left: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    left: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    left: 75px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    top: 50px;
+    left: 115px;
+    width: 50px;
+  }
+}
+
+
+/*----- Navigation -----*/
+.navbar {
+  margin: 50px 100px;
+  border-radius: 30px;
+  background-color: #feac5e;
+}
+
+.navbar .navbar-nav {
+  text-align: center;
+}
+
+.navbar .navbar-nav > li > a {
+  font-size: 20px;
+  color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+.navbar .navbar-nav > li > a:hover {
+  transform: scale(1.5);
+}
+
+.navbar.affix {
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  z-index: 16;
+}
+
+
+/*----- Carousel & Banners -----*/
+.carousel-wrapper,
+div[class^="banner-"] {
+  position: relative;
+}
+
+.carousel .carousel-inner > .item,
+div[class^="banner-"] {
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carousel .carousel-inner > .slide-1 {
+  background-image: url("../images/banners/carousel-slide-1.jpg");
+}
+
+.carousel .carousel-inner > .slide-2 {
+  background-image: url("../images/banners/carousel-slide-2.jpg");
+}
+
+.carousel .carousel-inner > .slide-3 {
+  background-image: url("../images/banners/carousel-slide-3.jpg");
+}
+
+.carousel-wrapper > .jumbotron,
+div[class^="banner-"] > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 2px 2px #77a1d3;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.carousel-wrapper > .jumbotron > h1,
+div[class^="banner-"] > div > h1 {
+  font-size: 100px;
+}
+
+.carousel-wrapper > .jumbotron {
+  z-index: 1;
+}
+
+.banner-about {
+  background-image: url("../images/banners/banner-about.jpg");
+}
+
+.banner-menu {
+  background-image: url("../images/banners/banner-menu.jpg");
+}
+
+.banner-order {
+  background-image: url("../images/banners/banner-order.jpg");
+}
+
+.banner-contact {
+  background-image: url("../images/banners/banner-contact.jpg");
+}
+
+.banner-credits {
+  background-image: url("../images/banners/banner-credits.jpg");
+}
+
+
+/*----- Main - All -----*/
+main > .container {
+  padding: 75px 125px;
+}
+
+main > .container > .row {
+  margin: 25px 0;
+}
+
+main img {
+  display: block;
+  margin: auto;
+}
+
+
+/*----- Main - Home -----*/
+.home > .container > .row img {
+  width: 500px;
+}
+
+
+/*----- Main - About -----*/
+.about > .container > .row .side-image {
+  height: 150vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/pics/donut-stack.png");
+}
+
+
+/*----- Main - Menu -----*/
+.menu > .container > .row > figure {
+  height: 400px;
+}
+
+.menu figure > figcaption > h4,
+.menu figure > figcaption > p:last-child {
+  text-align: center;
+}
+
+.menu figure > img {
+  width: 200px;
+  transition: all .5s ease-in-out;
+}
+
+.menu figure > img:hover {
+  cursor: pointer;
+  transform: translateY(-20px) scale(1.2);
+}
+
+.menu .modal .mySlides > img {
+  width: 800px;
+}
+
+
+/*----- Lightbox -----*/
+.menu .row > .column {
+  padding: 0 8px;
+}
+
+.menu .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu .column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.menu .modal {
+  position: fixed;
+  z-index: 17;
+  padding-top: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+}
+
+/* Modal Content */
+.menu .modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.menu .close {
+  color: #fff;
+  opacity: 1;
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.menu .close:hover,
+.menu .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.menu .prev,
+.menu .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Position the "next button" to the right */
+.menu .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.menu .prev:hover,
+.menu .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.menu .numbertext {
+  color: #000;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.menu .caption-container {
+  text-align: center;
+  background-color: #000;
+  padding: 2px 16px;
+  color: #fff;
+}
+
+
+/*----- Main - Contact -----*/
+.contact > .container .location,
+.contact > .container .message > h1 {
+  text-align: center;
+}
+
+.contact > .container .message {
+  margin-top: 40px;
+}
+
+.contact > .container > .row img {
+  width: 500px;
+}
+
+.contact > .container > .row #map {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+
+/*----- Responsive Google Map -----*/
+@media (max-width: 1300px) {
+  .contact > .container > .row #map {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact > .container > .row #map {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+
+/*----- Main - Credits -----*/
+.credits > .container > .row > .panel {
+  min-height: 225px;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*----- Footer -----*/
+footer .container {
+  padding: 0 25px;
+}
+
+footer > div:first-child {
+  min-height: 150px;
+  background-color: #5fc3e4;
+}
+
+footer > div:first-child .social-media {
+  text-align: center;
+}
+
+footer > div:first-child .social-media > a {
+  text-decoration: none;
+}
+
+footer > div:first-child .social-media i {
+  font-size: 40px;
+  margin: 0 6px;
+  transition: all .5s ease-in-out;
+}
+
+footer > div:first-child .social-media i:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+footer > div:first-child .newsletter .form-group {
+  padding: 0 3px;
+}
+
+footer > div:last-child {
+  min-height: 50px;
+  background-color: #e55d87;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----- Responsive Footer -----*/
+@media (max-width: 768px) {
+  footer > div:first-child .row > div:first-child,
+  footer > div:first-child .row > div:last-child {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  footer > div:first-child .row > .social-media {
+    margin: 10px 0 20px;
+  }
+
+  footer .container {
+    padding: 0 175px;
+  }
+}
