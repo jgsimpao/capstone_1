@@ -1,0 +1,60 @@
+Joel's Donuts v1.1.0
+Released 6/12/2017
+
+
+CL&F
+- Changed main color palette (blue, pink, and orange) to similar hues having more complementary pastel tones.
+
+
+Header
+- Expanded length of navbar to be close to the edges of the screen, as a result of improvements in responsive design.
+- Removed Credits page from navbar. Credits will be added in the footer on the next update after images are finalized.
+- Reduced scaling of navbar links on hover.
+- Carousel and banners no longer extend until the edges of the screen, in order to be aligned with the navbar.
+
+
+Main - All
+- Texts and images on the same row are now vertically centered with respect to each other. Applies to Home, About, and Contact.
+- Enclosed all forms in blue panel boxes to indicate grouping of similar content. Applies to Order and Contact.
+- All submit buttons are horizontally centered with their respective form. Applies to Order and Contact.
+
+
+Main - Home
+- Changed text of "Learn More" buttons to be more descriptive of the page each of them are linked to.
+
+
+Main - Menu
+- Reduced scaling of donut images on hover.
+
+
+Main - Order
+- Changed placement of "Add Item" button, and included "Undo Add" and "Reset All" buttons.
+- Set default value and minimum and maximum values for "Qty." field.
+
+
+Main - Contact
+- Shortened store address to be better aligned with the rest of the contact info.
+- Added "Open Hours" section.
+- Placed note about required fields in "Send Us a Message" section.
+
+
+Footer
+- Changed heading texts to sound more engaging and inviting.
+- Shortened store address to be better aligned with the rest of the contact info.
+- Greatly improved the look of social media icons.
+- Improved alignment of email subscription form controls.
+
+
+Responsive Design
+- Vastly improved responsiveness of navbar and brand logo, especially on extra small devices.
+- Vastly improved responsiveness of all main content (texts and images), especially on extra small devices.
+- Vastly improved responsiveness of all footer content across all devices.
+- Improved responsiveness of Google Map across all devices. Applies to Contact.
+
+
+Codes
+- Removed extra indentation applied to major semantic tags (header, main, and footer).
+- Removed redundant HTML wrapper tags.
+- Removed unnecessary class attributes.
+- Button tags previously redirecting with onclick events are now redirecting with <a> tags.
+- Major optimization of CSS codes in external stylesheet.
