@@ -1,96 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php include("include/head.html") ?>
+	<?php include("include/head.html"); ?>
 </head>
 <body>
 
 <header>
 	<div class="container-fluid">
 		<!-- Navigation Bar -->
-		<?php include("include/navigation.html") ?>
-
-		<!-- Banner -->
-		<div class="banner-contact jumbotron">
-			<h1>Contact Us</h1>
-		</div>
+		<?php include("include/navigation.html"); ?>
+	</div>
+	<!-- Banner -->
+	<div class="banner-contact jumbotron">
+		<h1>Contact Us</h1>
 	</div>
 </header>
 
 <main class="contact">
-	<!-- Main Content -->	      
+	<!-- Main Content -->
 	<div class="container">
 		<div class="row">
-			<div class="location col-sm-6 col-md-6 col-lg-6">
-				<div class="row">
+			<div class="col-sm-6">
+				<div>
 					<h1>Store Location</h1>
 					<div class="panel panel-primary">
 						<div class="panel-body">
-							<h4>
+							<p>
 								1F Caswynn Building<br>
 								134 Timog Ave., Quezon City<br>
 								Phone: (02) 366-1342<br>
 								Email: info@joelsdonuts.com
-							</h4>
+							</p>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div>
 					<h1>Open Hours</h1>
 					<div class="panel panel-primary">
 						<div class="panel-body">
-							<h4>
+							<p>
 								Weekdays: 6:00 AM to 8:00 PM<br>
 								Weekends: 8:00 AM to 10:00 PM
-							</h4>
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-md-6 col-lg-6">
+			<div class="col-sm-6">
 				<img class="img-responsive" src="images/pics/caswynn-bldg.jpg" alt="Caswynn Building">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-6 col-md-6 col-lg-6">
+			<div class="col-sm-6">
 				<div id="map"></div>
 			</div>
-			<div class="col-sm-6 col-md-6 col-lg-6">
+			<div class="col-sm-6">
 				<h1>Send Us a Message</h1>
-				<h4>Note: Items marked with an asterisk (*) are required.</h4>
+				<p>Note: Items marked with an asterisk (*) are required.</p>
 				<div class="panel panel-primary">
 					<div class="panel-body">
 						<form>
 							<div class="row">
-								<div class="form-group col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group col-sm-6">
 									<label>First Name *</label>
 									<input type="text" class="form-control">
 								</div>
-								<div class="form-group col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group col-sm-6">
 									<label>Last Name *</label>
 									<input type="text" class="form-control">
 								</div>
 							</div>
 							<div class="row">
-								<div class="form-group col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group col-sm-6">
 									<label>Phone *</label>
 									<input type="text" class="form-control">
 								</div>
-								<div class="form-group col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group col-sm-6">
 									<label>Email *</label>
 									<input type="email" class="form-control">
 								</div>
 							</div>
-							<div class="row">
-								<div class="form-group col-sm-12 col-md-12 col-lg-12">
-									<label>Message *</label>
-									<textarea class="form-control" rows="5"></textarea>
-								</div>
+							<div class="form-group">
+								<label>Message *</label>
+								<textarea class="form-control" rows="5"></textarea>
 							</div>
-							<div class="row">
-								<div class="form-group col-sm-12 col-md-12 col-lg-12">
-									<input type="submit" class="btn btn-info" value="Send Message">
-								</div>
+							<div class="form-group">
+								<input type="submit" class="btn btn-info" value="Send Message">
 							</div>
 						</form>
 					</div>
@@ -102,7 +97,7 @@
 
 <footer>
 	<!-- Footer -->
-	<?php include("include/footer.html") ?>
+	<?php include("include/footer.html"); ?>
 	<div class="footer-lower container-fluid">
 		<p>&copy; 2017 Joel's Donuts. All Rights Reserved.</p>
 	</div>
@@ -117,20 +112,19 @@
 <script type="text/javascript">
 	function myMap() {
 		var myLatlng = new google.maps.LatLng(14.632764, 121.043774);
-		var mapCanvas = document.getElementById("map");
+
 		var mapOptions = {
 			center: myLatlng,
 			zoom: 14
 		};
 
-		var map = new google.maps.Map(mapCanvas, mapOptions);
 		var marker = new google.maps.Marker({
 			position: myLatlng,
-			title:"Hello World!"
+			title: "Joel's Donuts"
 		});
 
 		// To add the marker to the map, call setMap();
-		marker.setMap(map);
+		marker.setMap(new google.maps.Map(document.getElementById("map"), mapOptions));
 	}
 </script>
 

@@ -1,9 +1,60 @@
+Joel's Donuts v1.2.0
+Released 6/20/2017
+
+
+CL&F
+- Finalized fonts and font sizes.
+- Set all content body text to Quicksand - Regular, and increased minimum font size to 16px.
+- Incorporated fallback fonts.
+
+
+Header
+- Increased z-index of brand logo, in order to prevent overlapping of navbar header border on navbar collapse.
+- Increased precision of data offset of navbar on affix.
+- Reverted width of carousel and banners to their original implementation, i.e. extends to the edges of the screen.
+
+
+Main - Menu
+- Added donut descriptions and prices to lightbox.
+- Made lightbox prev and next buttons always visible.
+
+
+Main - Order
+- Added donut prices to Donut Flavor dropdown list.
+
+
+Main - Contact
+- Changed Google Map marker tooltip display from "Hello World!" to "Joel's Donuts".
+
+
+Responsive Design
+- Further improved responsiveness on small and extra small devices. Applies to Navbar, Home, About, Menu, Contact, and Footer.
+- Fine-tuned responsiveness of Navbar across all devices.
+- Used column push and pull classes to alternate articles and images on extra small devices. Applies to Home.
+- Ensured donut stack image to be at level with all articles on small devices, and disappears on extra small devices. Applies to About.
+- Slightly increased <figure> height of donut images in response to the increase in <figcaption> font size. Applies to Menu.
+- Changed width attribute of lightbox image to max-width to improve responsiveness on small and extra small devices. Applies to Menu.
+- Vastly improved responsivess of Google Map on extra small devices. Applies to Contact.
+- Vastly improved responsivess of newsletter subscription form controls on small and extra small devices. Applies to Footer.
+
+
+Codes
+- Optimized JavaScript codes. Applies to Menu and Contact.
+- Pruned redundant usage of row and column classes.
+- Further pruned redundant wrapper tags and classes.
+- Removed commented unused codes.
+- Set tab size in external stylesheet to 4 spaces (from 2 spaces), in order to be in line with the tab spacing used in other files.
+
+
+##################################################
+
+
 Joel's Donuts v1.1.0
 Released 6/12/2017
 
 
 CL&F
-- Changed main color palette (blue, pink, and orange) to similar hues having more complementary pastel tones.
+- Changed main color palette (blue, pink, and yellow) to similar hues with more complementary pastel tones.
 
 
 Header
@@ -42,7 +93,7 @@ Footer
 - Changed heading texts to sound more engaging and inviting.
 - Shortened store address to be better aligned with the rest of the contact info.
 - Greatly improved the look of social media icons.
-- Improved alignment of email subscription form controls.
+- Improved alignment of newsletter subscription form controls.
 
 
 Responsive Design
